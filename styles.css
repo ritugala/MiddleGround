@@ -1,14 +1,52 @@
-.entry:not(:first-of-type)
+
+.btn-succ
 {
-    margin-top: 10px;
+    height: 36px;
+    width: 36px;
+    border-radius: 4.25rem;
+    margin-left: 12px; 
+    text-align: center;
+    padding-top: 0.15rem;
+    padding-right: 0.15rem;
+    padding-bottom: 0.15rem;
+    padding-left: 0.15rem;
+    color: white;
+    background-color: teal;
+    line-height: 5px;
+    border: none;
+}
+.close{
+    height: 36px;
+    width: 36px;
+    border-radius: 4.25rem;
+    padding-top: 5px;
+    margin-left: 12px; 
+    padding-bottom: 10px;
+    font-family: 'Calibri'; 
+    font-size: 20px;
+}
+.entry{
+    padding: 5px;
+    width: 12px;
+    
 }
 
-.glyphicon
-{
-    font-size: 12px;
+
+.controls{
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
-.btn
-{
-    border-radius: 10px;
-   
+
+.control-label{
+    padding-top: 12px;
+}
+
+.card-header{
+    padding-left: 80px;
+}
+
+div {
+    text-align: center;
+    font-family: 'Lucida Sans';
 }
