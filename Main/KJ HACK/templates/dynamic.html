@@ -11,6 +11,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
+
     <div class="card border-secondary mb-3" style="max-width: 18rem;" style="align-items: center;">
         <div class="card-header"><b>Add People</b></div>
         <div class="container" style="align-items: center;">
@@ -22,24 +23,30 @@
                     <form role="form" method="POST" action="">
                     <fieldset class="form-group">
                         
-                            <div class="entry input-group col-xs-3 form-group">
+                        <div class="form-group">
+                            {{ form.final_submit(class="btn-outline-info") }}
+                        </div>
+
+
+                            <div class="entry input-group col-xs-3 form-group" id="listof">
                                 
                                 {{ form.address1(class="form-control form-control-lg", id="autocomplete" , placeholder="Enter location") }}
 
                                         <div class="form-group">
+                                                
                                                  {{ form.new_user(class="btn-succ btn-add") }}
                                         </div>
+                                
                             </div>
 
-                        
-                        <div class="form-group">
-                                {{ form.final_submit(class="btn btn-outline-info") }}
-                        </div>
 
-                        <input type="hidden" name="hide_f" id="hide_i" >
+                           
+                            <input type="hidden" name="hide_f" id="hide_i" value="0" >
 
                     </fieldset>    
-                    </form>    
+                    </form>
+
+
                     </div>
                 </div>
             </div>
