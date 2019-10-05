@@ -10,7 +10,7 @@ $(document).on('click', '.btn-add', function(e)
 
             newEntry.find('input').val('');
             
-            
+            var input_added = document.querySelectorAll('.form-control');
             
             controlForm.find('.entry:not(:last) .btn-add')
                 .removeClass('btn-add').addClass('close')
