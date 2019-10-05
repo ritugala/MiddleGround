@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet" href="../static/dynamic.css">
     
 
 <body>
@@ -17,22 +17,37 @@
             <div class="row">
                 <div class="control-group" id="fields">
                     <label class="control-label" for="field1">Enter Locations</label>
-
+                    
                     <div class="controls">
-                        <form role="form" autocomplete="off">
-                            <div class="entry input-group col-xs-3">
-                                <input class="form-control" id="autocomplete" name="fields[]" type="text" placeholder="Enter location" />
-                                <button class="btn-succ btn-add" type="button">
-                                    <h5><i class="fas fa-user-plus"></i></h5>
-                                </button>
+                    <form role="form" method="POST" action="">
+                    <fieldset class="form-group">
+                        
+                            <div class="entry input-group col-xs-3 form-group">
+                                
+                                {{ form.address1(class="form-control form-control-lg", id="autocomplete" , placeholder="Enter location") }}
+
+                                        <div class="form-group">
+                                                 {{ form.new_user(class="btn-succ btn-add") }}
+                                        </div>
                             </div>
 
-                        </form>
-                        <button class="btn_submit" type="button">Let's meet! <i class="fas fa-long-arrow-alt-right"></i></button>
+                        
+                        <div class="form-group">
+                                {{ form.final_submit(class="btn btn-outline-info") }}
+                        </div>
+
+                        <input type="hidden" name="hide_f" id="hide_i" >
+
+                    </fieldset>    
+                    </form>    
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+        
+
 
         <script>
         
