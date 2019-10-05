@@ -8,10 +8,10 @@ $(document).on('click', '.btn-add', function(e)
     
             newEntry.find('input').val('');
             controlForm.find('.entry:not(:last) .btn-add')
-                .removeClass('btn-add').addClass('btn-remove')
-                .removeClass('btn-success').addClass('btn-danger')
-                .html('x');
-        }).on('click', '.btn-remove', function(e)
+                .removeClass('btn-add').addClass('close')
+                .removeClass('btn-succ').addClass('close')
+                .html("x");
+        }).on('click', '.close', function(e)
         {
             $(this).parents('.entry:first').remove();
     
