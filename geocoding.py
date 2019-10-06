@@ -2,11 +2,9 @@ from geopy.geocoders import Nominatim
 import gmplot
 import googlemaps
 from googleplaces import GooglePlaces, types
-import gmaps
 
 def MidPoint(n, addr):
     geolocator = Nominatim(user_agent="MeetInTheMid")
-    gmaps = googlemaps.Client(key='AIzaSyCd3yT-00TDYD1gYM6WWWKTO6kxOVr-ho8')
     google_places = GooglePlaces('AIzaSyCd3yT-00TDYD1gYM6WWWKTO6kxOVr-ho8')
     lat = []
     longy = []
@@ -49,7 +47,7 @@ def MidPoint(n, addr):
 
     #print(gmaps.directions(addr[0], mid_addr))
 
-    gmap.draw(r"C:\Users\Ritu\PycharmProjects\MiddleGround\Main\templates\temp.html") #to save the image
+    gmap.draw(r"D:\ritu-middle\ritu-middle\Main\templates\temp.html") #to save the image
 
     return lat_mid, longy_mid, temp
 
