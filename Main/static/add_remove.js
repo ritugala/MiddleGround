@@ -10,7 +10,7 @@ $(document).on('click', '.btn-add', function(e)
 
             newEntry.find('input').val('');
             
-            
+            var input_added = document.querySelectorAll('.form-control');
             
             controlForm.find('.entry:not(:last) .btn-add')
                 .removeClass('btn-add').addClass('close')
@@ -20,6 +20,7 @@ $(document).on('click', '.btn-add', function(e)
         }).on('click', '.close', function(e)
         {
             $(this).parents('.entry:first').remove();
+            var btn_Added = document.querySelectorAll('.btn_succ');
             
             e.preventDefault();
             return false;
@@ -33,10 +34,17 @@ $(document).on('click', '.btn-add', function(e)
                     input_added[i].id = 'abc-' + i;
                     input_added[i].name='xyz-' + i;
                 }
-            var s=document.getElementById("hide_i");
-            s.value=input_added.length;
-            console.log(s.value);
+            var n=document.getElementById("hide_i");
+            n.value=input_added.length;
             var currentInp = $(this).attr("id");
+            console.log(n.value);
             console.log(document.getElementById(currentInp).name);
+
             var placeBox = new google.maps.places.Autocomplete(document.getElementById(currentInp));
+            //if(n.value>1)
+                //{geocodeAddress(new google.maps.Geocoder(), map, n.value-2);}
+            //else {
+                //console.log("in else");
+           // }
         });
+        
