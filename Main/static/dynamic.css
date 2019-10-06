@@ -1,3 +1,15 @@
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+.control-label{
+    padding: 10px;
+}
+
+
 .btn-succ
 {
     height: 36px;
@@ -13,19 +25,28 @@
     background-color: teal;
     line-height: 5px;
     border: none;
-    
 }
 .btn_submit{
-   margin-top: 12px;
+
     border: none;
+    outline: none;
     width: 136px;
     height: 36px;
+}
+
+.btn-outline-info{
+    color: #17a2b8;
+    background-color: transparent;
+    background-image: none;
+    border-color: #17a2b8;
+    border-radius: 1.5rem;
+    width: 121px;
+    
 }
 
 button:focus {outline:none!important;}
 button:active {
     outline: none!important;
-    border: none!important;
     }
 
 .close{
@@ -37,29 +58,39 @@ button:active {
     padding-bottom: 10px;
     font-family: 'Calibri'; 
     font-size: 20px;
+    border: none!important;
+    outline: none;
 }
+
 .entry{
-    padding: 5px;
-    width: 12px;
-    
-}
 
-
-.controls{
-    padding-bottom: 15px;
     padding-left: 15px;
     padding-right: 15px;
 }
-
-.control-label{
-    padding-top: 12px;
-}
-
-.card-header{
-    padding-left: 80px;
-}
-
 div {
     text-align: center;
     font-family: 'Lucida Sans';
 }
+
+.absolute{
+
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    
+}
+.card{
+
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+#map {
+    height: 100%;
+  }
+
+  .parent {
+    position: relative;
+  }
+  
