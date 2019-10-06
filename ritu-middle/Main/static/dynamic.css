@@ -1,0 +1,99 @@
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+.control-label{
+    padding: 10px;
+}
+
+
+.btn-add
+{
+    height: 36px;
+    width: 36px;
+    border-radius: 4.25rem;
+    margin-left: 12px; 
+    text-align: center;
+    padding-top: 0.25rem;
+    padding-right: 0.25rem;
+    padding-bottom: 0.15rem;
+    padding-left: 0.25rem;
+    color: white;
+    background-image: url("../static/btn_addd.png");
+    line-height: 5px;
+    border: none;
+    
+}
+.btn_submit{
+
+    border: none;
+    outline: none;
+    width: 136px;
+    height: 36px;
+}
+
+.btn-outline-info{
+    color: greenyellow;
+    background-color: transparent;
+    background-image: none;
+    border-color:greenyellow;
+    border-radius: 1.5rem;
+    width: 121px;
+    height: 36px;
+    
+}
+
+button:focus {outline:none!important;}
+button:active {
+    outline: none!important;
+    }
+
+.close{
+    height: 36px;
+    width: 36px;
+    border-radius: 4.25rem;
+    padding-top: 5px;
+    margin-left: 12px; 
+    padding-bottom: 10px;
+    font-family: 'Calibri'; 
+    font-size: 20px;
+    border: none!important;
+    outline: none;
+    
+}
+
+.entry{
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+div {
+    text-align: center;
+    font-family: 'Lucida Sans';
+}
+
+.absolute{
+
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    
+}
+.card{
+
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+#map {
+    height: 100%;
+  }
+
+  .parent {
+    position: relative;
+  }
+  
