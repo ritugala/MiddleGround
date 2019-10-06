@@ -36,8 +36,7 @@
                                                     {{ form.address1(class="form-control form-control-lg", id="autocomplete" , placeholder="Enter location") }}
                     
                                                             <div class="form-group">
-                                                                    
-                                                                     {{ form.new_user(class="btn-succ btn-add") }}
+                                                                     {{ form.new_user(class="btn-add") }}
                                                             </div>
                                                     
                                                 </div>
@@ -67,6 +66,10 @@
         
         <script>
 
+
+
+        document.getElementsByClassName("close").value="x";
+        document.getElementsByClassName("btn_add").value="+";
         var map;
 
         function initialize(){
@@ -75,6 +78,7 @@
         }
 
         function initMap() {
+            console.log("initmap called");
             var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 8,
           center: {lat: -34.397, lng: 150.644}
@@ -82,22 +86,21 @@
         var geocoder = new google.maps.Geocoder();
 
         document.getElementById('new_user').addEventListener('click', function() {
-          geocodeAddress(geocoder, map, 0);
+          geocodeAddress(geocoder, map);
         });
         
         }
 
 
         
-        var counter=0;
-        function geocodeAddress(geocoder, resultsMap, counter) {
-            
+        var counter=1;
+        function geocodeAddress(geocoder, resultsMap) {
+        console.log("geo called");
         console.log('abc-'+String(counter));
         var address = document.getElementById('abc-'+String(counter)).value;
-
+        counter++;
         geocoder.geocode({'address': address}, function(results, status) {
-          if (status === 'OK') {
-              console.log(results[0]);
+          if (status === 'OK' ) {
             resultsMap.setCenter(results[0].geometry.location);
             var marker = new google.maps.Marker({
               map: resultsMap,
