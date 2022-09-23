@@ -6,4 +6,4 @@ gmplot==1.2.0
 Flask_WTF==0.14.2
 WTForms==2.2.1
 python_google_places==1.4.1
-protobuf==3.14.0
+protobuf==3.18.3
